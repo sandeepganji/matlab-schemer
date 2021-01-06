@@ -3,7 +3,7 @@ function sample()
 !touch test_file.txt
 fid = fopen('test_file.txt', 'w');
 for i=1:20
-    fprintf(fid, '%d unterminated\n, i);
+    fprintf(fid, '%d unterminated\n', i);
 end
 fclose(fid);
 end
